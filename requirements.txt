@@ -1,0 +1,9 @@
+python-fasthtml
+sqlite-utils
+plotly
+numpy
+polars
+xlsxwriter
+fastexcel
+psycopg2
+requests

@@ -1,0 +1,227 @@
+/* ------------------------------
+   BASE STYLING (same as Django)
+------------------------------ */
+body {
+    background-color: #AEB9AA;
+    font-family: 'Poppins', 'Matangi', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #000;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Matangi', 'Poppins', sans-serif;
+    color: #DA5D2F;
+    text-align: center;
+}
+
+p {
+    color: black;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+}
+
+/* ------------------------------
+   LAYOUT
+------------------------------ */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+    margin: 2rem auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+/* ------------------------------
+   BUTTONS
+------------------------------ */
+.btn {
+    background-color: #E8EEE6;
+    color: #DA5D2F;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 0.75rem 1.5rem;
+    margin: 0.5rem;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.btn:hover {
+    background-color: #cfd8cd;
+    box-shadow: 0 4px 8px rgba(108,117,125,0.4);
+}
+
+.btn:active {
+    transform: scale(0.97);
+}
+
+.btn-primary {
+    background: linear-gradient(#F29C1F, #DA5D2F);
+    color: #fff;
+}
+
+.btn-secondary {
+    background-color: #d3d3d3;
+    color: black;
+    border: 1px solid #000;
+}
+
+/* Return button (used on tables and modals) */
+.btn-return {
+    background-color: white;
+    border: solid 1px #DA5D2F;
+    border-radius: 15px;
+    color: #DA5D2F;
+    padding: 0.5rem 1rem;
+    position: relative;
+}
+
+/* ------------------------------
+   TABLES
+------------------------------ */
+.data-table {
+    width: 90%;
+    border-collapse: collapse;
+    margin: 2rem auto;
+    font-size: 0.95rem;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.data-table thead {
+    background-color: #DA5D2F;
+    color: #fff;
+    text-align: left;
+}
+
+.data-table th, 
+.data-table td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #E8EEE6;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #F8F9F8;
+}
+
+.data-table tr:hover {
+    background-color: #E8EEE6;
+}
+
+/* ------------------------------
+   SELECT & FORM CONTROLS
+------------------------------ */
+.select-container {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+select.select {
+    background-color: #E8EEE6;
+    border: 1px solid #DA5D2F;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    font-family: "Poppins", sans-serif;
+    color: #333;
+    width: 250px;
+    transition: box-shadow 0.2s ease;
+}
+
+select.select:focus {
+    outline: none;
+    box-shadow: 0 0 4px #DA5D2F;
+}
+
+/* ------------------------------
+   GRAPH AREA
+------------------------------ */
+.graph-container {
+    width: 80%;
+    height: 60vh;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+/* ------------------------------
+   LINKS & LISTS
+------------------------------ */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+ul li {
+    margin: 0.5rem 0;
+}
+
+ul li a {
+    color: #DA5D2F;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+/* ------------------------------
+   LOGO + BACKGROUND CIRCLE
+------------------------------ */
+.background-circle {
+    position: fixed;
+    top: 75%;
+    left: 75%;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+#bottom-logo {
+    position: absolute;
+    bottom: 5vh;
+    right: calc(50% - 50px);
+    width: 100px;
+    opacity: 0.8;
+}
+
+/* ------------------------------
+   SCROLLABLE CONTENT
+------------------------------ */
+.scrollable-content {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.scrollable-content::-webkit-scrollbar {
+    width: 6px;
+}
+
+.scrollable-content::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+}
